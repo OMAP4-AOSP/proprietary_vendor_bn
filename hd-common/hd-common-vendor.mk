@@ -16,3 +16,4 @@
 
 $(call inherit-product-if-exists, vendor/bn/hd-common/hd-common-vendor-blobs.mk)
 
+$(call inherit-product-if-exists, vendor/bn/hd-common/hd-common-prebuilt.mk)
