@@ -1,5 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter ovation hummingbird,$(TARGET_DEVICE)),)
 ifeq ($(TARGET_BOARD_PLATFORM),omap4)
 
 include $(CLEAR_VARS)
@@ -12,4 +13,5 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX)
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/firmware
 include $(BUILD_PREBUILT)
 
+endif
 endif
